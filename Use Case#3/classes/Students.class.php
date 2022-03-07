@@ -1,6 +1,8 @@
 <?php
 
-class Students
+use Students as GlobalStudents;
+
+class Students 
 {
     public string $name;
     public int $score;
@@ -9,5 +11,7 @@ class Students
     {
         $this->name = ucfirst($name);
         $this->score = $score;
+        
     }
+
 }
